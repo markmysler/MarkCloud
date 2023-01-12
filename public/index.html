@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MarkCloud</title>
+</head>
+
+<body>
+    <div class="titulo">
+        <h1>MarkCloud</h1>
+        <h4>La nube de confianza</h4>
+    </div>
+    <section id="subir-fotos">
+        <h3 id="titulo-form-subir-img">Selecciona y subi tu foto:</h3>
+        <form action="/upload" method="post" enctype="multipart/form-data" id="form-subir-img">
+            <input type="file" name="image" id="files" />
+            <img src="#" alt="Imagen seleccionada" id="preview-img">
+            <input type="submit" value="Subir a MarkCloud" />
+        </form>
+    </section>
+    <section id="fotos-subidas">
+        <h3>Fotos subidas:</h3>
+        <div id="list"></div>
+        <button id="erase-images">Borrar Imagen</button>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
